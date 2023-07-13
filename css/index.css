@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/*ROOT STYLING*/
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Ubuntu', sans-serif; 
+ overflow-x: hidden;
+}
+
+body{
+    background-color: steelblue;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    user-select: none;
+}
+
+/*STYLING THE NAVIGATION BAR*/
+
+nav{
+    position: relative;
+    background-color: #0F172A;
+    height: auto;
+    width: 100vw;
+    background-size: cover;
+    z-index: 1000;
+}
+
+/*ENDING OF STYLING THE NAVIGATION BAR*/
+
+
+/*STARTING OF STYLING THE LOGO*/
+
+.logo{
+    height: 70px;
+    width: auto;
+    margin-top: 25px;
+    margin-left: 20px;
+    user-select: none;
+}
+
+/*ENDING OF STYLING THE LOGO*/
+
+/*Starting of the Login Section*/
+
+.container{
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    width: 400px;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active{
+    transform: scale(.98);
+}
+
+.text  {
+    margin-top: 30px;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid{
+    outline: none;
+    border-color: lightblue;
+}
+
+.form-control label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: .3s cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+
+/*Ending of the Login Section*/
+
+
+/*Error Section*/
+
+.loginError{
+    position: absolute;
+    left: 36%;
+    bottom: 15%;
+    font-size: 18px;
+    display: none;
+}
+
+
+
+/*FOOTER STARTING*/
+
+.footer-container{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100vw;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #0F172A;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/*Making the page responsive*/
+
+@media (max-width: 1025px){
+    nav{
+        position: relative;
+    }
+
+    .logo{
+        height: 80px;
+    }
+
+    .container{
+        position: absolute;
+        left: 35%;
+        top: 20%;
+    }
+
+    .loginError{
+        position: absolute;
+        left: 35%;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 769px){
+    nav{
+        position: relative;
+        width: 100%;
+    }
+
+    .logo{
+        height: 80px;
+        margin: 0;
+    }
+
+    .container{
+        position: absolute;
+        top: 20%;
+        left: 25%;
+    }
+
+    .loginError{
+        position: absolute;
+        left: 25%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 426px){
+    nav{
+        position: relative;
+        width: 100%;
+    }
+
+    .logo{
+        margin:0;
+        height: 70px;
+        left: 0;
+    }
+
+    .container{
+        position: absolute;
+        width:400px;
+        top: 20%;
+        left: 3%;
+    }
+    .loginError{
+        position: absolute;
+        left: 7%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 376px){
+    nav{
+        position: relative;
+        width: 100vw;
+    }
+
+    .logo{
+        margin:0;
+        height: 70px;
+        left: 0;
+    }
+
+    .container{
+        position: absolute;
+        width:375px;
+        left: 0%;
+        top: 20%;
+    }
+
+    .loginError{
+        position: absolute;
+        left: 5%;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 321px){
+    nav{
+        position: relative;
+        width: 100vw;
+    }
+
+    .logo{
+        margin:0;
+        height: 50px;
+        left: 0;
+    }
+
+    .container{
+        position: absolute;
+        width:320px;
+        left: 0%;
+        top: 20%;
+    }
+
+    .loginError{
+        position: absolute;
+        left: 5%;
+        font-size: 14px;
+    }
+}

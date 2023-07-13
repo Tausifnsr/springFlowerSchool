@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flowers School</title>
+    <link rel="stylesheet" href="css/examresults.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+
+<header>
+
+    <!--NAV STARTING-->
+    <nav>
+        <!--LOGO-->
+        <a href="welcome.html"><img src="images/logo.png" alt="" class="logo"></a>
+
+
+        <!--NAV LINKS-->
+        <ul>
+            <li><a href="timetable.html"><i class="fas fa-clock"></i><br>Time Table</a></li>
+            <li><a href="examresults.html"><i class="fas fa-square-poll-vertical"></i><br>Exam Results</a></li>
+            <li><a href="extraactivity.html"><i class="fas fa-laptop-code"></i><br>Extra Activity</a></li>
+            <li><a href="profile.html" id="studentName">User</a></li>
+            <li>
+                <button class="logOutButton" onclick="logOut()">Logout</button>
+            </li>
+        </ul>
+    </nav>
+    <!--NAV ENDING-->
+
+</header>
+
+    <!--EXAM RESULTS SECTION STARTING-->
+    <section class="resultContainer">
+        <h1>Exam Results</h1>
+    <div class="subjectList">
+        <select class="form-select" id="subject" onchange="displayMarks()">
+            <option selected value="Select your subject">Select your subject</option>
+            <option value="Maths">Maths</option>
+            <option value="English">English</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
+            <option value="C++">C++</option>
+            <option value="PE">PE</option>
+        </select>
+    </div> 
+
+    <div class="obtainedMarks">
+        <span>Marks</span>
+        <input type="text" id="marks" readonly>
+    </div>
+
+    <div class="obtainedGrades">
+        <span>Grade</span>
+        <input type="text" id="grade" readonly>
+    </div>
+
+    </section>
+    <!--EXAM RESULTS SECTION ENDING-->
+
+
+
+
+
+
+
+
+
+
+   <!--Footer Starting-->
+
+   <footer>
+    <div class="rights"><a href="welcome.html"><img src="images/favicon.png" alt="">Spring Flowers School</a> &#169; 2023 All Rights Reserved</div>
+</footer>
+
+<!--Footer Ending-->
+
+<script src="../js/index.js"></script>
+
+
+</body>
+</html>

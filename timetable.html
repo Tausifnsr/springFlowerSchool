@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flowers School</title>
+    <link rel="stylesheet" href="css/timetable.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+    <header>
+
+        <!--NAV STARTING-->
+        <nav>
+            <!--LOGO-->
+            <a href="welcome.html"><img src="images/logo.png" alt="" class="logo"></a>
+    
+    
+            <!--NAV LINKS-->
+            <ul>
+                <li><a href="timetable.html"><i class="fas fa-clock"></i><br>Time Table</a></li>
+                <li><a href="examresults.html"><i class="fas fa-square-poll-vertical"></i><br>Exam Results</a></li>
+                <li><a href="extraactivity.html"><i class="fas fa-laptop-code"></i><br>Extra Activity</a></li>
+                <li><a href="profile.html" id="studentName">User</a></li>
+                <li>
+                    <button class="logOutButton" onclick="logOut()">Logout</button>
+                </li>
+            </ul>
+        </nav>
+        <!--NAV ENDING-->
+    
+    </header>
+
+
+    <div class="timetable">
+        
+        <h2>Time Table</h2>
+
+        <table>
+            <tr class="time">
+                <th>TIME TABLE</th>
+                <th>08:05AM to 8:40AM</th>
+                <th>08:45AM to 9:20AM</th>
+                <th>09:25AM to 10:00AM</th>
+                <th>10:05AM to 10:40AM</th>
+                <th>10:45AM to 11:20AM</th>
+                <th>11:25AM to 12:00PM</th>
+                <th>12:05PM to 12:40PM</th>
+                <th>12:45PM to 01:20PM</th>
+            </tr>
+
+
+            <tr>
+                <th>Monday</th>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>L</td>
+                <td>C++</td>
+                <td>Games</td>
+                <td>Biology</td>
+            </tr>
+
+            <tr>
+                
+                <th>Tuesday</th>
+                <td>Maths</td>
+                <td>Physics Lab</td>
+                <td>Chemistry</td>
+                <td>Physical Education</td>
+                <td>U</td>
+                <td>Biology</td>
+                <td>English</td>
+                <td>Personality Development</td>
+            </tr>
+
+            <tr>
+                
+                <th>Wednesday</th>
+                <td>Maths</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>C++</td>
+                <td>N</td>
+                <td>Biology</td>
+                <td>English</td>
+                <td>Chemistry Lab</td>
+            </tr>
+
+            <tr>
+                
+                <th>Thursday</th>
+                <td>Maths</td> 
+                <td>Chemistry</td>
+                <td>Physics</td>
+                <td>English</td>
+                <td>C</td>
+                <td>Biology</td>
+                <td>Games</td>
+                <td>SUPW</td>
+            </tr>
+
+            <tr>
+                
+                <th>Friday</th>
+                <td>Maths</td>
+                <td>Biology</td>
+                <td>Physics</td>
+                <td>English</td>
+                <td>H</td>
+                <td>Chemistry</td>
+                <td>C++</td>
+                <td>SUPW</td>
+            </tr>
+
+            <tr>
+                
+                <th>Saturday</th>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Personality Development</td>
+                <td>Physics</td>
+                <td>BREAK</td>
+                <td>Chemistry</td>
+                <td>Physical Education</td>
+                <td>Games</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!--Footer Starting-->
+
+    <footer>
+        <div class="footer-container">
+            <div class="general">
+                <h2>General</h2>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="school">
+                <h2>School</h2>
+                <ul>
+                    <li><a href="welcome.html">Home</a></li>
+                    <li><a href="timetable.html">Time Table</a></li>
+                    <li><a href="examresults.html">Exam Results</a></li>
+                    <li><a href="extraactivity.html">Extra Activity</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <input type="text">
+                <button class="signup">SignUp</button>
+            </div>
+        </div>
+        <div class="rights"><a href="#"><img src="images/favicon.png" alt="">Spring Flowers School</a> &#169; 2023 All Rights Reserved</div>
+    </footer>
+
+    <!--Footer Ending-->
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
+

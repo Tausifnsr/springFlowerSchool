@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/*ROOT STYLING*/
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Ubuntu', sans-serif; 
+ overflow-x: hidden;
+}
+
+body{
+    background-color: steelblue;
+}
+
+/*STYLING THE NAVIGATION BAR*/
+
+nav{
+    position: relative;
+    background-color: #0F172A;
+    height: auto;
+    width: 100vw;
+    background-size: cover;
+    z-index: 1000;
+}
+
+/*ENDING OF STYLING THE NAVIGATION BAR*/
+
+
+
+/*STARTING OF STYLING THE LOGO*/
+
+.logo{
+    height: 100px;
+    width: auto;
+    margin-top: 25px;
+    margin-left: 200px;
+    user-select: none;
+}
+
+/*ENDING OF STYLING THE LOGO*/
+
+
+
+
+
+/*STYLING THE LINKS START>>>>*/
+
+
+nav ul{
+    position: relative;
+    display: flex;
+    float: right;
+    list-style-type: none;
+    margin: 40px 60px;
+}
+
+nav ul li{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-right: 100px;
+    user-select: none;
+
+}
+
+nav ul li a{
+    color: #ECF0F1;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 29px;
+}
+
+nav ul li:active{
+    transform: scale(.98);
+}
+
+nav ul li a:hover{
+    color: #FDE047;
+    transition: color .4s ease;
+}
+
+nav ul li a:active{
+    color: #7C3AED;
+}
+
+#studentName {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.logOutButton{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+.fas{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+/*ENDING OF STYLING THE LINKS*/
+
+
+.resultContainer{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 400px;
+    border: 3px solid #0F172A;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultContainer h1{
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.subjectList select{
+    width: 600px;
+    height: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.obtainedMarks span,
+.obtainedGrades span{
+    background-color: #e28743;
+    padding: 8px;
+    position: absolute;
+    left: 70px;
+}
+
+#marks, #grade{
+    width: 600px;
+    height: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*STARTING OF FOOTER SECTION*/
+
+
+footer{
+    height: auto;
+    width: 100%;
+    background-color: #0F172A;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    color: #fff;
+   
+}
+
+footer h2{
+    text-align: right;
+    padding: 0px 50px 10px 40px;
+}
+
+footer .footer-container ul{
+    list-style-type: none;
+    position: relative;
+    margin-left: 40px;
+}
+
+footer .footer-container ul li a{
+    text-decoration: none;
+    color: #22D3EE;
+    font-size: 18px;
+}
+
+
+footer .footer-container ul li a:hover{
+    color: #fff;
+}
+
+
+
+footer .footer-container .newsletter input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    margin-top: 30px;
+    width: 300px;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+footer .footer-container .signup{
+ 
+    background-color: #22D3EE;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 100;
+}
+
+footer .footer-container .signup:hover{
+    color: #22D3EE;
+    background-color: #fff;
+}
+
+footer .footer-container .signup:active{
+    transform: scale(.98);
+}
+
+
+
+footer .rights{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .rights img{
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    height: 20px;
+}
+
+footer .rights a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .rights a:hover{
+    color: #FDE047;
+}
+
+
+footer .footer-container .school,
+footer .footer-container .social{
+    border-left: 2px solid #95A5A6;
+}
+
+
+/*ENDING OF FOOTER SECTION*/
+
+
+/*MAKING THE PAGE RESPONSIVE*/
+
+/*FOR LAPTOP VIEW*/
+@media (max-width: 1440px){
+
+    footer .rights{
+        position: relative;
+        font-size: 18px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 33%;
+        height: 30px;
+    }
+
+    .resultContainer{
+        margin-bottom: 20px;
+    }
+
+    .obtainedMarks span,
+    .obtainedGrades span{
+    background-color: #e28743;
+    padding: 8px;
+    position: absolute;
+    left: 50px;
+}
+}
+
+
+@media (max-width: 1024px){
+    nav{
+        position: relative;
+        height: 70px;
+    }
+    .logo{
+        position: absolute;
+        top: 30%;
+        left: -15%;
+        height: 40px;
+        transform: translate(0, -50%);
+    }
+    nav ul{
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .subjectList select{
+        width: 400px;
+    }
+
+    #marks, #grade{
+        width: 400px;
+    }
+
+    .obtainedMarks span,
+    .obtainedGrades span{
+    background-color: #e28743;
+    padding: 8px;
+    position: absolute;
+    left: 54px;
+    }
+
+
+    .footer-container{
+        position: absolute;
+        font-size: 12px;
+        height: auto;
+    }
+
+    footer .rights{
+      position: relative;
+      font-size: 12px;  
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 33%;
+    }
+}
+
+
+
+
+
+
+/*FOR TABLET VIEW*/
+
+
+@media (max-width: 769px){
+    .logo{
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+    }
+    nav ul{
+        position: absolute;
+        top: -50%;
+        left: 20%;
+        margin: 50px 0px 0px 0px; 
+    }
+
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .subjectList select{
+        width: 350px;
+    }
+
+    #marks, #grade{
+        width: 350px;
+    }
+
+    .obtainedMarks span,
+    .obtainedGrades span{
+    background-color: #e28743;
+    padding: 8px;
+    position: absolute;
+    left: 15px;
+    }
+
+    .footer-container{
+        display: flex;
+        font-size: 12px;
+    }
+
+    footer .footer-container ul li a{
+        font-size: 12px;
+    }
+
+    footer .footer-container .school,
+    footer .footer-container .social{
+        border: none;
+    }
+
+    footer .footer-container .newsletter input{
+        width: 150px;
+        padding: 0;
+        margin: 0;
+    }
+    footer .footer-container .newsletter .signup{
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    footer .rights {
+        position: relative;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        height: 25px;
+        left: 28.5%;
+        top: 15%;
+    }
+}
+
+
+/*FOR MOBILE VIEW*/
+
+
+@media (max-width: 426px){
+    nav ul{
+        position: absolute;
+        top: 20%;
+        margin: 0px;
+        display: flex;
+
+    }
+
+    nav ul li {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px;
+        padding: 0;
+    }
+    
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .fas{
+        font-size: 10px;
+    }
+
+    .logo{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        height: 30px;
+    }
+
+    .resultContainer{
+        position: absolute;
+        left: 10%;
+        width: 80%;
+    }
+
+    .subjectList select{
+        width: 300px;
+    }
+
+    #marks, #grade{
+        width: 300px;
+    }
+
+    .obtainedMarks span,
+    .obtainedGrades span{
+    background-color: #e28743;
+    padding: 8px;
+    position: absolute;
+    left: 18px;
+    }
+
+    footer .footer-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .footer-container h2
+    {
+        position: absolute;
+        left: 40%;
+        font-size: 10px;
+    }
+
+    footer .footer-container ul{
+        font-size: 10px;
+        margin: 10px 0px;
+    }
+
+    footer .rights{
+        position: relative;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 12%;
+    }
+
+    footer .footer-container .newsletter{
+        position: relative;
+    }
+
+    footer .footer-container .newsletter input{
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    footer .footer-container .newsletter .signup{
+        position: absolute;
+        padding: 6px;
+        top: 50%;
+    }
+
+}
+
+@media (max-width: 376px){
+    nav ul{
+        position: relative;
+        margin: 0px;
+        display: flex;
+
+    }
+
+    nav ul li {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px;
+        padding: 0;
+    }
+    
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .subjectList select{
+        width: 280px;
+    }
+
+    #marks, #grade{
+        width: 280px;
+    }
+
+    .obtainedMarks span,
+    .obtainedGrades span{
+    background-color: #e28743;
+    padding: 8px;
+    position: absolute;
+    left: 8px;
+    }
+
+    .fas{
+        font-size: 10px;
+    }
+
+    .logo{
+        position: absolute;
+        height: 30px;
+        left: -40%;
+    }
+
+    footer .rights{
+        position: relative;
+        font-size: 10px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 12%;
+    }
+}
+
+@media (max-width: 321px) {
+    .logo{
+        position: absolute;
+        left: 15%;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 10%;
+        padding: 0;
+        font-size: 6px;
+    }
+
+    .subjectList select{
+        width: 200px;
+    }
+
+    #marks, #grade{
+        width: 200px;
+    }
+
+    .obtainedMarks span,
+    .obtainedGrades span{
+    background-color: #e28743;
+    padding: 8px;
+    position: absolute;
+    left: 24px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 6%;
+    }
+}

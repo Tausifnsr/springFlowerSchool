@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flowers School</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+    <header>
+
+        <!--NAV STARTING-->
+        <nav>
+            <!--LOGO-->
+            <a href="welcome.html"><img src="images/logo.png" alt="" class="logo"></a>
+    
+    
+            <!--NAV LINKS-->
+            <ul>
+                <li><a href="timetable.html"><i class="fas fa-clock"></i><br>Time Table</a></li>
+                <li><a href="examresults.html"><i class="fas fa-square-poll-vertical"></i><br>Exam Results</a></li>
+                <li><a href="extraactivity.html"><i class="fas fa-laptop-code"></i><br>Extra Activity</a></li>
+                <li><a href="profile.html" id="studentName">User</a></li>
+                <li>
+                    <button class="logOutButton" onclick="logOut()">Logout</button>
+                </li>
+            </ul>
+        </nav>
+        <!--NAV ENDING-->
+    
+    </header> 
+
+    <!--Profile Starting-->
+
+    <div class="profile-container">
+        <div class="profile">
+            <div class="profile-pic">
+                <img src="/images/profile.png" alt="">
+                <h2 id="name"></h2>
+                <p>Class:&emsp;&emsp;&emsp;&emsp;&emsp;<span id="std"></span><br>
+                   Reg. Number:&emsp;<span id="studId"></span><br>
+                   Principal's Signature: <img class="sign" src="images/sign.png" alt="">
+                </p>
+            </div>
+            <div class="profile-details">
+                <h2>Student Information</h2>
+                    <p>D.O.B (DD/MM/YYYY): &emsp; <span id="dob"></span><br>
+                    Blood Group:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span id="bgroup"></span><br>
+                    Contact Number:&emsp;&emsp;&emsp;&emsp;<span id="contactno"></span> <br>
+                    State:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<span id="state"></span> <br>
+                    Country:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span id="country"></span><br>
+                   <span id="studinfo"> Student Information Centre:</span><br>
+                    The High Street, 5th Floor, 11th Main Road,<br>
+                    4th Block East, Jayanagar, Bengaluru - 560 011<br></span>
+                    Email:<span id="email"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="attendance">
+        <div class="scheduled">
+            <h3>Total Scheduled Classes</h3>
+            <h1 id="clsscheduled"></h1>
+        </div>
+        <div class="attended">
+            <h3>Total Classes Attended</h3>
+            <h1 id="clsattended"></h1>
+        </div>
+        <div class="attendance-percentage">
+            <h3>Attendance Percentage</h3>
+            <h1 id="attendedper"></h1>
+        </div>
+    </div>
+    
+    <!--Profile Ending-->
+
+
+    <!--Footer Starting-->
+
+    <footer>
+        <div class="footer-container">
+            <div class="general">
+                <h2>General</h2>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="school">
+                <h2>School</h2>
+                <ul>
+                    <li><a href="welcome.html">Home</a></li>
+                    <li><a href="timetable.html">Time Table</a></li>
+                    <li><a href="">Exam Results</a></li>
+                    <li><a href="#">Extra Activity</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <input type="text">
+                <button class="signup">SignUp</button>
+            </div>
+        </div>
+        <div class="rights"><a href="#"><img src="images/favicon.png" alt="">Spring Flowers School</a> &#169; 2023 All Rights Reserved</div>
+    </footer>
+
+    <!--Footer Ending-->
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>

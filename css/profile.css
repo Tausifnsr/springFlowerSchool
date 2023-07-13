@@ -1,0 +1,747 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/*ROOT STYLING*/
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Ubuntu', sans-serif; 
+ overflow-x: hidden;
+}
+
+body{
+    background-image: linear-gradient(65deg,#1565C0,#FC5C7D, #6A82FB);
+    background-size: cover;
+}
+
+/*STYLING THE NAVIGATION BAR*/
+
+nav{
+    position: relative;
+    background-color: #0F172A;
+    height: auto;
+    width: 100vw;
+    background-size: cover;
+    z-index: 1000;
+}
+
+/*ENDING OF STYLING THE NAVIGATION BAR*/
+
+
+
+/*STARTING OF STYLING THE LOGO*/
+
+.logo{
+    height: 100px;
+    width: auto;
+    margin-top: 25px;
+    margin-left: 200px;
+    user-select: none;
+}
+
+
+/*ENDING OF STYLING THE LOGO*/
+
+
+
+
+
+/*STYLING THE LINKS START>>>>*/
+
+
+nav ul{
+    position: relative;
+    display: flex;
+    float: right;
+    list-style-type: none;
+    margin: 40px 60px;
+}
+
+nav ul li{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-right: 100px;
+    user-select: none;
+
+}
+
+nav ul li a{
+    color: #ECF0F1;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 29px;
+}
+
+nav ul li:active{
+    transform: scale(.98);
+}
+
+nav ul li a:hover{
+    color: #FDE047;
+    transition: color .4s ease;
+}
+
+nav ul li a:active{
+    color: #7C3AED;
+}
+
+#studentName {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.logOutButton{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+.fas{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+/*ENDING OF STYLING THE LINKS*/
+
+
+.profile-container{
+    position: relative;
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .6);
+    box-shadow: 10px 10px 35px rgba(0, 0, 0, .8);
+    border-radius: 30px;
+    margin: auto; 
+    margin: 40px auto;
+    user-select: none;
+}
+
+.profile-container .profile{
+    display: flex;
+}
+
+.profile-container .profile .profile-pic{
+    width: 50%;
+    display: flex;
+    /*flex-direction: column;*/
+
+}
+
+.profile-container .profile .profile-pic img{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    height: 250px;
+    overflow-y: hidden;
+}
+
+.profile-pic h2{
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    font-size: 30px;
+}
+
+.profile-pic p {
+    position: absolute;
+    left: 15%;
+    top: 60%;
+    height: 40%;
+    font-size: 25px;
+    line-height: 2em;
+}
+
+.profile-container .profile .profile-pic .sign {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    height: 90px;
+}
+
+.profile-details::before{
+    content: '';
+    position: absolute;
+    top: 18%;
+    left: 0;
+    height: 80%;
+    width: 4px;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,.3);
+}
+
+.profile-details{
+    height:auto;
+    width: 50%;
+    position: absolute;
+    top: 0;
+}
+
+
+.profile-details h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.profile-details p{
+    font-size: 20px;
+    margin: 5% 0 0 25%;
+    line-height: 50px;
+}
+
+.profile-details p span{
+    font-weight: 800;
+}
+
+.attendance{
+    display: flex;
+    justify-content: space-around;
+}
+
+.attendance h3{
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.attendance .scheduled,
+.attendance .attended,
+.attendance .attendance-percentage{
+    padding: 40px 100px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .8);
+    margin-bottom: 40px;
+}
+
+.attendance .scheduled{
+    background-color: #22D3EE;
+    color: aliceblue;
+}
+
+.attendance .attended{
+    background-color: #FFBF00;
+    color: #fff;
+}
+
+
+.attendance .attendance-percentage{
+    background-color: #DFFF00;
+    color: darkgreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*STARTING OF FOOTER SECTION*/
+
+
+footer{
+    height: auto;
+    width: 100%;
+    background-color: #0F172A;
+}
+
+.footer-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    color: #fff;
+   
+}
+
+footer h2{
+    text-align: right;
+    padding: 0px 50px 10px 40px;
+}
+
+footer .footer-container ul{
+    list-style-type: none;
+    position: relative;
+    margin-left: 40px;
+}
+
+footer .footer-container ul li a{
+    text-decoration: none;
+    color: #22D3EE;
+    font-size: 18px;
+}
+
+
+footer .footer-container ul li a:hover{
+    color: #fff;
+}
+
+
+
+footer .footer-container .newsletter input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    margin-top: 30px;
+    width: 300px;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+footer .footer-container .signup{
+ 
+    background-color: #22D3EE;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 100;
+}
+
+footer .footer-container .signup:hover{
+    color: #22D3EE;
+    background-color: #fff;
+}
+
+footer .footer-container .signup:active{
+    transform: scale(.98);
+}
+
+
+
+footer .rights{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .rights img{
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    height: 20px;
+}
+
+footer .rights a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .rights a:hover{
+    color: #FDE047;
+}
+
+
+footer .footer-container .school,
+footer .footer-container .social{
+    border-left: 2px solid #95A5A6;
+}
+
+
+/*ENDING OF FOOTER SECTION*/
+
+
+
+/*MAKING THE PAGE RESPONSIVE*/
+
+/*FOR LAPTOP VIEW*/
+@media (max-width: 1440px){
+
+    footer .rights{
+        position: relative;
+        font-size: 18px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 33%;
+        height: 30px;
+    }
+}
+
+
+@media (max-width: 1024px){
+    nav{
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        top: 30%;
+        left: -15%;
+        height: 70px;
+        transform: translate(0, -50%);
+    }
+    nav ul{
+        margin-right: 10px;
+    }
+
+    .profile-container .profile .profile-pic img{
+        height: 200px;
+        top: 5%;
+        left: 15%;
+    }
+
+    .profile-pic h2{
+        left: 10%;
+    }
+
+    .profile-pic p{
+        left: 10%;
+        font-size: 20px;
+    }
+
+    .profile-details h2{
+        font-size: 28px
+    }
+
+    .profile-details p{
+        font-size: 15px;
+        line-height: 40px;
+        margin: 5% 0 0 18%;
+    }
+
+    .attendance{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .attendance .scheduled,
+.attendance .attended,
+.attendance .attendance-percentage{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+    footer .rights{
+      position: relative;  
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 27%;
+    }
+}
+
+
+
+
+
+
+/*FOR TABLET VIEW*/
+
+
+@media (max-width: 769px){
+    .logo{
+        height: 50px;
+        position: absolute;
+        top: 5%;
+        left: 26%;
+        margin-bottom: 20px;
+        transform: translate(-50%, -50%);
+    }
+    nav ul{
+        margin: 50px 0px 0px 0px; 
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .profile-container .profile .profile-pic img{
+        height: 150px;
+        top: 5%;
+        left: 15%;
+    }
+
+    .profile-pic h2{
+        top: 40%;
+        left: 13%;
+        font-size: 18px;
+    }
+
+    .profile-pic p{
+        top: 50%;
+        left: 12%;
+        font-size: 16px;
+    }
+
+    .profile-container .profile .profile-pic .sign{
+        left: 10%;
+        height: 60px;
+    }
+
+    .profile-details h2{
+        font-size: 20px
+    }
+
+    .profile-details p{
+        font-size: 12px;
+        line-height: 30px;
+        margin: 15% 0 0 18%;
+    }
+
+    .profile-details::before{
+        top: 30%;
+        left: 5%;
+        height: 70%;
+    }
+
+    .footer-container{
+        display: flex;
+        font-size: 12px;
+    }
+
+    footer .footer-container ul li a{
+        font-size: 12px;
+    }
+
+    footer .footer-container .school,
+    footer .footer-container .social{
+        border: none;
+    }
+
+    footer .footer-container .newsletter input{
+        width: 150px;
+        padding: 0;
+        margin: 0;
+    }
+    footer .footer-container .newsletter .signup{
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    footer .rights {
+        position: relative;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        height: 25px;
+        left: 28.5%;
+        top: 15%;
+    }
+}
+
+
+/*FOR MOBILE VIEW*/
+
+
+@media (max-width: 426px){
+    nav ul{
+        position: relative;
+        margin: 0px;
+        display: flex;
+
+    }
+
+    nav ul li {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px;
+        padding: 0;
+    }
+    
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .fas{
+        font-size: 10px;
+    }
+
+    .logo{
+        position: absolute;
+        left: -30%;
+        top: 10%;
+    }
+
+    .profile-container{
+        position: relative;
+        
+    }
+
+    .profile-container .profile .profile-pic img{
+        height: 120px;
+        top: 5%;
+        left: 35%;
+    }
+
+    .profile-pic h2{
+        top: 35%;
+        left: 25%;
+        font-size: 18px;
+    }
+
+    .profile-pic p{
+        top: 45%;
+        left: 25%;
+        font-size: 16px;
+    }
+
+    .profile-container .profile .profile-pic .sign{
+        top: 55%;
+        left: 10%;
+        height: 60px;
+    }
+
+    .profile-details{
+        display: none;
+    }
+
+
+    
+
+    footer .footer-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .footer-container h2
+    {
+        position: absolute;
+        left: 40%;
+        font-size: 10px;
+    }
+
+    footer .footer-container ul{
+        font-size: 10px;
+        margin: 10px 0px;
+    }
+
+    footer .rights{
+        position: relative;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 12%;
+    }
+
+    footer .footer-container .newsletter{
+        position: relative;
+    }
+
+    footer .footer-container .newsletter input{
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    footer .footer-container .newsletter .signup{
+        position: absolute;
+        padding: 6px;
+        top: 50%;
+    }
+
+}
+
+
+@media (max-width: 376px){
+    nav ul{
+        position: relative;
+        margin: 0px;
+        display: flex;
+
+    }
+
+    nav ul li {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px;
+        padding: 0;
+    }
+    
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .fas{
+        font-size: 10px;
+    }
+
+    .logo{
+        position: absolute;
+        height: 30px;
+        left: -40%;
+    }
+
+    .profile-container .profile .profile-pic img{
+        height: 120px;
+        top: 10%;
+        left: 32%;
+    }
+
+    .profile-pic h2{
+        top: 35%;
+        left: 20%;
+        font-size: 18px;
+    }
+
+    .profile-pic p{
+        top: 45%;
+        left: 15%;
+        font-size: 16px;
+    }
+
+    .profile-container .profile .profile-pic .sign{
+        top: 55%;
+        left: 10%;
+        height: 60px;
+    }
+
+    footer .rights{
+        position: relative;
+        font-size: 10px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 12%;
+    }
+}

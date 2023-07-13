@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+/*ROOT STYLING*/
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Ubuntu', sans-serif; 
+ overflow-x: hidden;
+}
+
+body{
+    background-image: linear-gradient(45deg, #1565C0,#FC5C7D, #6A82FB);
+    scroll-behavior: smooth;
+}
+
+/*STYLING THE NAVIGATION BAR*/
+
+nav{
+    position: relative;
+    background-color: #0F172A;
+    height: auto;
+    width: 100vw;
+    background-size: cover;
+    z-index: 1000;
+}
+
+/*ENDING OF STYLING THE NAVIGATION BAR*/
+
+
+
+/*STARTING OF STYLING THE LOGO*/
+
+.logo{
+    height: 100px;
+    width: auto;
+    margin-top: 25px;
+    margin-left: 200px;
+    user-select: none;
+}
+
+/*ENDING OF STYLING THE LOGO*/
+
+
+
+
+
+/*STYLING THE LINKS START>>>>*/
+
+
+nav ul{
+    position: relative;
+    display: flex;
+    float: right;
+    list-style-type: none;
+    margin: 40px 60px;
+}
+
+nav ul li{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-right: 100px;
+    user-select: none;
+
+}
+
+nav ul li a{
+    color: #ECF0F1;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 29px;
+}
+
+nav ul li:active{
+    transform: scale(.98);
+}
+
+nav ul li a:hover{
+    color: #FDE047;
+    transition: color .4s ease;
+}
+
+nav ul li a:active{
+    color: #7C3AED;
+}
+
+#studentName {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.fas{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.logOutButton{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/*ENDING OF STYLING THE LINKS*/
+
+
+
+
+
+/*STARTING OF STYLING THE WELCOME BANNER*/
+
+
+.welcome{
+    position: relative;
+    background: url('../images/welcome.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100vw;
+}
+
+.welcome::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0F172A;
+    opacity: .8;
+}
+
+.welcome h2{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    color: #fff;
+    padding: 10px;
+    font-size: 36px;
+    z-index: 1;
+    user-select: none;
+}
+
+/*ENDING OF STYLING THE WELCOME BANNER*/
+
+
+
+
+/*STARTING OF STYLING THE WELCOME BANNER BUTTON*/
+
+.welcome .btn{
+    position: absolute;
+    top: 55%;
+    left: 16%;
+    padding: 12px 35px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #22D3EE;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    z-index: 10;
+    cursor: pointer;
+    font-weight: 800;
+    user-select: none;
+}
+
+.welcome .btn:hover{
+    color: #22D3EE;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.welcome .btn:active{
+    transform: scale(.95);
+}
+ 
+/*ENDING OF STYLING THE WELCOME BANNER BUTTON*/
+
+
+/*STARTING OF STYLING THE COURSE VIEW SECTION*/
+
+
+.section-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+/*ENDING OF STYLING THE COURSE VIEW SECTION*/
+
+/*STARTING OF EVENTS SECTION*/
+
+.events{
+    height: 700px;
+    width: 45%;
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 15px 10px rgba(236, 240, 241, .4);
+}
+
+.events h2{
+    text-align: center;
+    background-color: #0F172A;
+    color: #ECF0F1;
+    padding: 30px;
+    font-size: 30px;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    text-align: center;
+    font-size: 20px;
+    background-color: #0F172A;
+    color: #fff;
+}
+
+table tr{
+    height: 73px;
+}
+
+table td{
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+table tr:nth-child(even) {
+        background-color: #fff;
+      }
+
+table tr:nth-child(odd) {
+        background-color: #22D3EE;
+      }
+
+
+
+
+/*ENDING OF EVENTS SECTION*/
+
+
+/*STARTING OF MESSAGE SECTION*/
+
+.section-container .message{
+    position: relative;
+    float: right;
+    height: 700px;
+    width: 45%;
+    background-image: url('../images/message.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 15px 10px rgba(237, 241, 242, 0.4);
+}
+
+.message h2{
+    text-align: center;
+    background-color: #0F172A;
+    color: #ECF0F1;
+    padding: 30px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.message p{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(15, 23, 42, .8);
+    margin:  0;
+    color: #fff;
+    font-size: 16px;
+    padding: 30px 30px;
+}
+
+
+/*ENDING OF MESSAGE SECTION*/
+
+
+
+
+/*STARTIG OF DAY CONTAINER*/
+
+.day-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    user-select: none;
+}
+
+.day-box{
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 95%;
+    background-color: #0F172A;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    justify-content: space-around;
+}
+
+
+.day-box i{
+    margin-top: 10px;
+    position: relative;
+    font-size: 80px;
+    line-height: 7rem;
+}
+
+.day-box a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+
+}
+
+
+
+.day-box a:hover{
+    color: #22D3EE;
+    transition: color .4s ease;
+}
+
+/*ENDING OF DAY CONTAINER*/
+
+/*STARTING OF CAROUSEL SECTION*/
+
+@keyframes carouselAnim{
+    0%{
+      transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+      transform-origin: center center;
+      z-index: 10;
+    }
+    27%{
+      transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+      transform-origin: center center;
+      z-index: 10;
+    }
+    33.33333%{
+      transform: translateX(0) translateY(0) rotatey(10deg) scale(0.8,1);
+      transform-origin: left center;
+      z-index: 5;
+    }
+    60%{
+      transform: translateX(0) translateY(0) rotatey(10deg) scale(0.8,1);
+      transform-origin: left center;
+      z-index: 5;
+    }
+    66.666666%{
+      transform: translateX(200%) translateY(0) rotatey(-10deg) scale(0.8,1);
+      transform-origin: right center;
+      z-index: 5;
+    }
+    93%{
+      transform: translateX(200%) translateY(0) rotatey(-10deg) scale(0.8,1);
+      transform-origin: right center;
+      z-index: 5;
+    }
+    100%{
+      transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+      transform-origin: center center;
+      z-index: 10;
+    }
+  }
+  
+  .carousel-container{
+    width: 100%;
+    height: 400px;
+    max-width: 960px;
+    perspective: 1000px;
+    perspective-origin: 50% 60%;
+    min-height: 14em;
+    margin: 3em auto;
+    user-select: none;
+  }
+  
+  .carousel-item{
+    position: absolute;
+    top: 30%;
+    width: 33%; 
+    padding-bottom: 19%;
+    animation-name: carouselAnim;
+    transform-origin: left center;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+  
+  .carousel-item:first-child{
+    animation-delay: -4s;
+  }
+  .carousel-item:last-child{
+    animation-delay: -8s;
+  }
+  
+  .carousel-image{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    border-radius: 2px;
+  }
+
+/*ENDING OF CAROUSEL SECTION*/
+
+
+/*STARTING OF LSIT OF EXTRA ACTIVITIES*/
+
+  .activityContainer{
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #22D3EE;
+    margin-bottom: 50px;
+  }
+
+  .activityContainer h2{
+    color: #fff;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  .activityContainer dl{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #95A5A6; 
+    line-height: 2em;   
+  }
+
+/*ENDING OF LSIT OF EXTRA ACTIVITIES*/
+
+
+/*STARTING OF FOOTER SECTION*/
+
+
+footer{
+    height: auto;
+    width: 100%;
+    background-color: #0F172A;
+}
+
+.footer-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    color: #fff;
+   
+}
+
+footer h2{
+    text-align: right;
+    padding: 0px 50px 10px 40px;
+}
+
+footer .footer-container ul{
+    list-style-type: none;
+    position: relative;
+    margin-left: 40px;
+}
+
+footer .footer-container ul li a{
+    text-decoration: none;
+    color: #22D3EE;
+    font-size: 18px;
+}
+
+
+footer .footer-container ul li a:hover{
+    color: #fff;
+}
+
+
+
+footer .footer-container .newsletter input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    margin-top: 30px;
+    width: 300px;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+footer .footer-container .signup{
+ 
+    background-color: #22D3EE;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 100;
+}
+
+footer .footer-container .signup:hover{
+    color: #22D3EE;
+    background-color: #fff;
+}
+
+footer .footer-container .signup:active{
+    transform: scale(.98);
+}
+
+
+
+footer .rights{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .rights img{
+    position: absolute;
+    top: 30%;
+    left: 39.3%;
+    height: 20px;
+}
+
+footer .rights a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .rights a:hover{
+    color: #FDE047;
+}
+
+
+footer .footer-container .school,
+footer .footer-container .social{
+    border-left: 2px solid #95A5A6;
+}
+
+
+/*ENDING OF FOOTER SECTION*/
+
+
+/*MAKING THE PAGE RESPONSIVE*/
+
+/*FOR LAPTOP VIEW*/
+@media (max-width: 1440px){
+
+    footer .rights{
+        position: relative;
+        font-size: 18px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 33%;
+        height: 30px; 
+    }
+}
+
+
+@media (max-width: 1024px){
+    nav{
+        position: relative;
+    }
+    .logo{
+        position: absolute;
+        top: 30%;
+        left: -15%;
+        height: 70px;
+        transform: translate(0, -50%);
+    }
+    nav ul{
+        margin-right: 10px;
+    }
+
+
+    footer .rights{
+      position: relative;  
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 27%;
+    }
+}
+
+
+
+
+
+
+/*FOR TABLET VIEW*/
+
+
+@media (max-width: 769px){
+    .logo{
+        height: 50px;
+        position: absolute;
+        top: 5%;
+        left: 26%;
+        margin-bottom: 20px;
+        transform: translate(-50%, -50%);
+    }
+    nav ul{
+        margin: 50px 0px 0px 0px; 
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .welcome h2{
+        font-size: 40px;
+    }
+
+    .welcome .btn{
+        position: absolute;
+        left: 30%;
+        top: 70%;
+    }
+
+    .course-view{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .events{
+        width: 50%;
+    }
+
+    .footer-container{
+        display: flex;
+        font-size: 12px;
+    }
+
+    footer .footer-container ul li a{
+        font-size: 12px;
+    }
+
+    footer .footer-container .school,
+    footer .footer-container .social{
+        border: none;
+    }
+
+    footer .footer-container .newsletter input{
+        width: 150px;
+        padding: 0;
+        margin: 0;
+    }
+    footer .footer-container .newsletter .signup{
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    footer .rights {
+        position: relative;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        height: 25px;
+        left: 28.5%;
+        top: 15%;
+    }
+}
+
+
+/*FOR MOBILE VIEW*/
+
+
+@media (max-width: 426px){
+    nav ul{
+        position: relative;
+        margin: 0px;
+        display: flex;
+
+    }
+
+    nav ul li {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px;
+        padding: 0;
+    }
+    
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .fas{
+        font-size: 10px;
+    }
+
+    .logo{
+        position: absolute;
+        left: -30%;
+        top: 10%;
+    }
+
+    .welcome img{
+        background-size: cover;
+    }
+    .welcome h2{
+        font-size: 30px;
+    }
+
+    .welcome .btn{
+        position: absolute;
+        top: 60%;
+        left: 25%;
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .section-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-container .message{
+        width: 80%;
+    }
+
+    .day-container .day-box{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 90%;
+    }
+
+    .day-container .day-box a{
+        font-size: 16px;
+    }
+
+    .day-container .day-box a span{
+        margin-left: 100px;
+    }
+
+    .section-container .events{
+        width: 90%;
+        height: 100%;
+        font-size: 12px;
+    }
+
+    .section-container .events table tr{
+        height: 33px;
+    }
+
+    .section-container .message{
+      width: 90%;
+    }
+
+    .section-container .message p{
+       font-size: 12px;
+      }
+
+    .carousel-container{
+        height: 100px;
+    }
+
+    footer .footer-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .footer-container h2
+    {
+        position: absolute;
+        left: 40%;
+        font-size: 10px;
+    }
+
+    footer .footer-container ul{
+        font-size: 10px;
+        margin: 10px 0px;
+    }
+
+    footer .rights{
+        position: relative;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 12%;
+    }
+
+    footer .footer-container .newsletter{
+        position: relative;
+    }
+
+    footer .footer-container .newsletter input{
+        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    footer .footer-container .newsletter .signup{
+        position: absolute;
+        padding: 6px;
+        top: 50%;
+    }
+
+}
+
+@media (max-width: 376px){
+    nav ul{
+        position: relative;
+        margin: 0px;
+        display: flex;
+
+    }
+
+    nav ul li {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px;
+        padding: 0;
+    }
+    
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .fas{
+        font-size: 10px;
+    }
+
+    .logo{
+        position: absolute;
+        height: 30px;
+        left: -40%;
+    }
+
+    footer .rights{
+        position: relative;
+        font-size: 10px;
+    }
+
+    footer .rights img{
+        position: absolute;
+        left: 12%;
+    }
+}

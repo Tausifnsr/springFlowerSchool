@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flowers School</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+
+<header>
+
+    <!--NAV STARTING-->
+    <nav>
+        <!--LOGO-->
+        <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+    </nav>
+</header>
+
+        <div class="container">
+            <h1>Login</h1>
+                <form>
+                    <div class="form-control">
+                        <input type="text" required id="username" onfocus="hideLoginError()">
+                        <label>Username</label>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="password" required id="password" onfocus="hideLoginError()">
+                        <label>Password</label>
+                    </div>
+
+                    <button type="button" class="btn" onclick="login()">Login</button>
+                </form>
+        </div>
+
+        <section class="loginError" id="loginError">
+            Error! Invalid Username or Password. Please try again.
+        </section>
+        
+        
+
+    <footer>
+        <div class="footer-container">
+            Spring Flowers School &#169; 2023 All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    </body>
+    </html>
+    
